@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo | Mundo dos Contos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="brand-badge">📚</span> Mundo dos Contos</a>
+      <button id="menu-btn" class="menu-btn">☰</button>
+      <nav id="nav-links" class="nav-links">
+        <a href="index.html">Início</a>
+        <a class="active" href="catalogo.html">Catálogo</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div class="page-banner">
+      <h1>Catálogo de livros em PDF</h1>
+      <p>Use os filtros abaixo para encontrar livros por categoria, subcategoria e nome.</p>
+    </div>
+
+    <section class="section">
+      <div class="filter-panel">
+        <input id="filtro-busca" type="search" placeholder="Buscar por título ou autor" />
+        <select id="filtro-categoria">
+          <option>Todas</option>
+          <option>Romance</option>
+          <option>Fantasia</option>
+          <option>Tecnologia</option>
+        </select>
+        <select id="filtro-subcategoria">
+          <option>Todas</option>
+          <option>Contemporâneo</option>
+          <option>Drama</option>
+          <option>Leve</option>
+          <option>Épica</option>
+          <option>Aventura</option>
+          <option>Programação</option>
+          <option>Inovação</option>
+          <option>Carreira</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="section">
+      <div id="catalogo-lista" class="card-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <section><p class="footer-title">Mundo dos Contos</p><p>Leitura gratuita para o Brasil.</p></section>
+      <section><button class="footer-toggle" data-target="ft1">Institucional ▾</button><div id="ft1" class="footer-collapse footer-links"><a href="sobre.html">Sobre nós</a><a href="contato.html">Contato</a><a href="termos-de-uso.html">Termos de uso</a><a href="politica-privacidade.html">Política de privacidade</a></div></section>
+      <section><button class="footer-toggle" data-target="ft2">Categorias ▾</button><div id="ft2" class="footer-collapse footer-links"><a href="categorias/romance.html">Romance</a><a href="categorias/fantasia.html">Fantasia</a><a href="categorias/tecnologia.html">Tecnologia</a></div></section>
+      <section><button class="footer-toggle" data-target="ft3">Ajuda ▾</button><div id="ft3" class="footer-collapse footer-links"><a href="catalogo.html">Como baixar</a><a href="contato.html">Suporte</a></div></section>
+    </div>
+    <div class="container footer-note">© 2026 Mundo dos Contos.</div>
+  </footer>
+  <button id="back-to-top" class="back-to-top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
